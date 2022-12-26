@@ -12,4 +12,4 @@ jobs:
     needs : my-job
     steps:
       - name: job2
-        run: echo "Hey there! I am job 2"
+        run: pip install -r requirements.txt
