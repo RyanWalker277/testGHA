@@ -24,4 +24,4 @@ jobs:
         run: |
           sudo apt-get install python3
           sudo apt install python3-pip
-          sudo apt-get install -y python-opengl
+          sudo apt-get install -y python3-opengl
