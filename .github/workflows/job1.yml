@@ -5,11 +5,4 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: echo
-        run: pip install -r requirements.txt
-  
-  my-job2:
-    runs-on: ubuntu-latest
-    needs : my-job
-    steps:
-      - name: job2
-        run: pip install -r requirements.txt
+        run: echo hello world
