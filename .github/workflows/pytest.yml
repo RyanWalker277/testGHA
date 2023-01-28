@@ -1,8 +1,11 @@
 name: job1
-on: push
+on:
+  push:
+    branches:
+      - staging
 jobs:
   my-job:
     runs-on: ubuntu-latest
     steps:
       - name: echo
-        run: echo hello world
+        run: echo hello world staging
