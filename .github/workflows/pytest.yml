@@ -1,4 +1,4 @@
-name: job1
+name: job2
 on:
   push:
     branches:
