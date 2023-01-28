@@ -1,27 +1,8 @@
-name: pytest
-
-on:
-  push:
-    branches:
-    - main
-  pull_request:
-    branches:
-    - main
-
+name: job1
+on: push
 jobs:
-  build:
+  my-job:
     runs-on: ubuntu-latest
-    strategy:
-      matrix:
-        python-version: ['3.7', '3.8', '3.9', '3.10']
     steps:
-      - uses: actions/checkout@v2
-      - name: Set up Python
-        uses: actions/setup-python@v1
-        with:
-          python-version: ${{ matrix.python-version }}
-      - name: Install dependencies
-        run: |
-          sudo apt-get install python3
-          sudo apt install python3-pip
-          sudo apt-get install -y python3-opengl
+      - name: echo
+        run: echo hello world
